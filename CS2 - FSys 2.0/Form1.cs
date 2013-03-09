@@ -197,10 +197,16 @@ namespace CS2___FSys_2._0
             {
                 currentSetting = sS.loadSettings(".\\Settings\\FSconfig.fsc");
             }
-            catch (FileNotFoundException e)
+            catch (FileNotFoundException)
             {
                 resetSettings();
             }
+            catch (DirectoryNotFoundException)
+            {
+                Directory.CreateDirectory(".\\Settings");
+                resetSettings();
+            }
+
             this.label11.Text = "Amount(" + currentSetting.currency + "):";
         }
         private void initialiseLog()

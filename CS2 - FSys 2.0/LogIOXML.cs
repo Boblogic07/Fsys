@@ -56,6 +56,10 @@ namespace CS2___FSys_2._0
         public void saveSettings(FSysSettings toBeSaved)
         {
             serialiser = new BinaryFormatter();
+            if (!System.IO.File.Exists(".\\Settings"))
+            {
+                System.IO.Directory.CreateDirectory(".\\Settings");
+            }
             writer = File.OpenWrite(".\\Settings\\FSconfig.fsc");
             serialiser.Serialize(writer, toBeSaved);
             writer.Close();
@@ -90,6 +94,11 @@ namespace CS2___FSys_2._0
             }
             catch (FileNotFoundException)
             {
+                result = new FsysLog("Default Log", "Default User");
+            }
+            catch (DirectoryNotFoundException)
+            {
+                Directory.CreateDirectory(".\\Logs");
                 result = new FsysLog("Default Log", "Default User");
             }
             return result;
