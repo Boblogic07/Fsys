@@ -495,6 +495,13 @@ namespace CS2___FSys_2._0
             }
         }
 
+        private void advancedGraphingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Graphs graphWindow = new Graphs();
+            graphWindow.toGraph = currentLog;
+            graphWindow.Show();
+        }
+
         
 
     }
