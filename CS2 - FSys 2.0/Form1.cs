@@ -271,7 +271,7 @@ namespace CS2___FSys_2._0
         private void updateListView()
         {
             listView1.Items.Clear();
-            listView1.Columns[2].Width = listView1.Width - 600;
+            listView1.Columns[2].Width = listView1.Width - 630;
 
             foreach (FsysLogItem logItem in currentLog.logContent)
             {
@@ -438,7 +438,7 @@ namespace CS2___FSys_2._0
 
         private void listView1_Resize(object sender, EventArgs e)
         {
-            listView1.Columns[2].Width = (listView1.Width - 600);
+            listView1.Columns[2].Width = (listView1.Width - 630);
         }
 
         private void editItemToolStripMenuItem1_Click(object sender, EventArgs e)

@@ -184,20 +184,20 @@
             // editItemToolStripMenuItem
             // 
             this.editItemToolStripMenuItem.Name = "editItemToolStripMenuItem";
-            this.editItemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editItemToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.editItemToolStripMenuItem.Text = "Add Item";
             // 
             // editItemToolStripMenuItem1
             // 
             this.editItemToolStripMenuItem1.Name = "editItemToolStripMenuItem1";
-            this.editItemToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.editItemToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
             this.editItemToolStripMenuItem1.Text = "Edit Item";
             this.editItemToolStripMenuItem1.Click += new System.EventHandler(this.editItemToolStripMenuItem1_Click);
             // 
             // deleteItemToolStripMenuItem
             // 
             this.deleteItemToolStripMenuItem.Name = "deleteItemToolStripMenuItem";
-            this.deleteItemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deleteItemToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.deleteItemToolStripMenuItem.Text = "Delete Item";
             this.deleteItemToolStripMenuItem.Click += new System.EventHandler(this.deleteItemToolStripMenuItem_Click);
             // 
@@ -205,7 +205,7 @@
             // 
             this.undoToolStripMenuItem.Enabled = false;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
@@ -213,7 +213,7 @@
             // 
             this.redoToolStripMenuItem.Enabled = false;
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.redoToolStripMenuItem.Text = "Redo";
             this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
             // 
@@ -338,7 +338,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1434, 538);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1434, 738);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -652,7 +652,7 @@
             this.listView1.FullRowSelect = true;
             this.listView1.Location = new System.Drawing.Point(4, 133);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1427, 470);
+            this.listView1.Size = new System.Drawing.Size(1427, 602);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -720,12 +720,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1434, 562);
+            this.ClientSize = new System.Drawing.Size(1434, 762);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(1450, 400);
+            this.MinimumSize = new System.Drawing.Size(1450, 800);
             this.Name = "Form1";
             this.Text = "F-Sys 2.0";
             this.Load += new System.EventHandler(this.Form1_Load);
